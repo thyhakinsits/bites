@@ -759,17 +759,20 @@ footer hr {
   .section4-images1,
   .section4-images2,
   .chef-cards {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
+    gap: 20px;
     width: 100%;
   }
 
   .card,
   .chef {
-    width: 100%;
-    max-width: 340px;
-    margin-inline: auto;
+    flex: 0 1 calc(50% - 14px);
+    width: auto;
+    max-width: 310px;
+    margin-inline: 0;
   }
 
   .section3 {
@@ -974,8 +977,8 @@ footer hr {
   .section1-text p {
     width: auto;
     max-width: 100%;
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8;
   }
 
   .section1-buttons {
@@ -1009,7 +1012,7 @@ footer hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 18px;
     width: 100%;
   }
 
@@ -1017,7 +1020,7 @@ footer hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 18px;
     width: 100%;
   }
 
@@ -1028,8 +1031,16 @@ footer hr {
   .card,
   .chef {
     width: 100%;
-    max-width: 295px;
+    max-width: 255px;
+    height: auto;
+    min-height: 315px;
+    padding: 14px;
     margin-inline: auto;
+  }
+
+  .card img {
+    width: 155px;
+    height: 115px;
   }
 
   .section3 {
@@ -1043,9 +1054,10 @@ footer hr {
   }
 
   .section3 > img {
+    display: block;
     max-width: 100%;
     height: auto;
-    margin-inline: 0;
+    margin-inline: auto;
   }
 
   .section3-text {
@@ -1096,6 +1108,11 @@ footer hr {
   .section5 h1 {
     font-size: 26px;
     line-height: 1.4;
+  }
+
+  .section5 > img,
+  .section5 img {
+    display: none;
   }
 
   .section6 .title {
